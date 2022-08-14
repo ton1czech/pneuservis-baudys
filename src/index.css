@@ -7,3 +7,15 @@
 * {
   scroll-behavior: smooth;
 }
+
+@layer components {
+  .heading {
+    @apply font-semibold text-5xl text-light;
+  }
+  .text {
+    @apply font-normal text-light text-lg leading-normal;
+  }
+  .link {
+    @apply font-medium text-light text-lg leading-normal;
+  }
+}
