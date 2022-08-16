@@ -9,6 +9,9 @@
 }
 
 @layer components {
+  .logo {
+    @apply font-semibold text-xl md:text-5xl text-light uppercase;
+  }
   .heading {
     @apply font-semibold text-2xl md:text-5xl text-light;
   }
@@ -16,7 +19,7 @@
     @apply font-normal text-light text-lg leading-normal;
   }
   .link {
-    @apply font-medium text-light text-lg leading-normal hover:text-accent1;
+    @apply font-medium text-light md:text-lg leading-normal hover:text-accent1;
   }
 
   .bg {
