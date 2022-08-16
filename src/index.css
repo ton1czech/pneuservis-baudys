@@ -10,12 +10,30 @@
 
 @layer components {
   .heading {
-    @apply font-semibold text-2xl md:text-5xl text-white;
+    @apply font-semibold text-2xl md:text-5xl text-light;
   }
   .text {
-    @apply font-normal text-white text-lg leading-normal;
+    @apply font-normal text-light text-lg leading-normal;
   }
   .link {
-    @apply font-medium text-light text-lg leading-normal;
+    @apply font-medium text-light text-lg leading-normal hover:text-accent1;
+  }
+
+  .bg {
+    background-image: linear-gradient(
+      to right bottom,
+      #221635,
+      #27193d,
+      #2b1b45,
+      #301e4d,
+      #352055,
+      #3a225f,
+      #3e2368,
+      #432572,
+      #492680,
+      #4f278f,
+      #55289d,
+      #5b28ac
+    );
   }
 }
