@@ -10,33 +10,18 @@
 
 @layer components {
   .logo {
-    @apply font-semibold text-xl md:text-5xl text-light uppercase;
+    @apply font-semibold text-sm sm:text-3xl text-light uppercase;
   }
   .heading {
-    @apply font-semibold text-2xl md:text-5xl text-light;
+    @apply font-semibold text-2xl sm:text-5xl text-light;
+  }
+  .subheading {
+    @apply font-semibold text-xl sm:text-3xl text-light2;
   }
   .text {
-    @apply font-normal text-light text-lg leading-normal;
+    @apply font-normal text-light sm:text-lg leading-normal;
   }
   .link {
-    @apply font-medium text-light md:text-lg leading-normal hover:text-accent1;
-  }
-
-  .bg {
-    background-image: linear-gradient(
-      to right bottom,
-      #16141a,
-      #16141b,
-      #16141c,
-      #17131d,
-      #17131e,
-      #171622,
-      #171925,
-      #161c29,
-      #13222f,
-      #102932,
-      #112f34,
-      #163534
-    );
+    @apply font-medium text-light text-sm sm:text-base leading-normal hover:text-accent;
   }
 }

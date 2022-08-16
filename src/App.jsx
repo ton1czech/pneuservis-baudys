@@ -4,8 +4,8 @@ import Services from './components/Services'
 
 export default function App() {
   return (
-    <div className='bg w-full overflow-hidden font-poppins px-5'>
-      <div className='md:max-w-[60%] m-auto'>
+    <div className='bg-dark w-full overflow-hidden font-poppins px-5'>
+      <div className='lg:max-w-[60%] m-auto'>
         <Navbar />
         <Hero />
         <Services />
