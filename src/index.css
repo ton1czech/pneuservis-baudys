@@ -10,10 +10,10 @@
 
 @layer components {
   .heading {
-    @apply font-semibold text-2xl md:text-5xl text-light;
+    @apply font-semibold text-2xl md:text-5xl text-white;
   }
   .text {
-    @apply font-normal text-light text-lg leading-normal;
+    @apply font-normal text-white text-lg leading-normal;
   }
   .link {
     @apply font-medium text-light text-lg leading-normal;
