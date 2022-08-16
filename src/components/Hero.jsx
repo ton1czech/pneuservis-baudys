@@ -3,7 +3,7 @@ import Map from './Map'
 export default function Hero() {
   return (
     <div
-      className='md:grid md:grid-cols-2 flex flex-col-reverse w-full pb-24'
+      className='md:grid md:grid-cols-2 flex flex-col-reverse w-full pb-24 scroll-mt-7'
       id='info'
     >
       <div>

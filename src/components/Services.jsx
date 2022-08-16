@@ -17,7 +17,7 @@ const Item = ({ image, text, inverted }) =>
 
 export default function Services() {
   return (
-    <div className='pb-24' id='services'>
+    <div className='pb-24 scroll-mt-7' id='services'>
       <h1 className='heading'>Co nabízíme?</h1>
       <div className='grid'>
         <Item image={tire1} text='přezouvání kol' />
