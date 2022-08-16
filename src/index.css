@@ -10,7 +10,7 @@
 
 @layer components {
   .heading {
-    @apply font-semibold text-5xl text-light;
+    @apply font-semibold text-2xl md:text-5xl text-light;
   }
   .text {
     @apply font-normal text-light text-lg leading-normal;
