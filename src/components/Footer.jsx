@@ -4,10 +4,10 @@ export default function Footer() {
   return (
     <Container dark>
       <div className='py-6 sm:py-8 text-center'>
-        <div className='grid sm:grid-cols-2'>
-          <ul className='sm:text-left'>
+        <div className='flex flex-col sm:flex-row justify-between sm:text-left'>
+          <ul className=''>
             <li>
-              <h1 className='subheading pb-2 sm:pb-3'>odkazy</h1>
+              <h1 className='subheading pb-2 sm:pb-3'>Odkazy</h1>
             </li>
             <li>
               <a
@@ -37,15 +37,25 @@ export default function Footer() {
               </a>
             </li>
           </ul>
-          <ul className='sm:text-left pt-8 sm:pt-0'>
+          <ul className='pt-8 sm:pt-0'>
             <li>
-              <h1 className='subheading pb-2 sm:pb-3'>kontakt</h1>
+              <h1 className='subheading pb-2 sm:pb-3'>Kontakt</h1>
             </li>
             <li>
               <p className='text text-sm sm:text-base'>ladikmoto@seznam.cz</p>
             </li>
             <li>
               <p className='text text-sm sm:text-base'>+420 777 004 000</p>
+            </li>
+          </ul>
+          <ul className='pt-8 sm:pt-0'>
+            <li>
+              <h1 className='subheading pb-2 sm:pb-3'>Otevírací doba</h1>
+            </li>
+            <li>
+              <p className='text text-sm sm:text-base'>
+                Po-Pá, 8:30-11:30, 13:00-17:00
+              </p>
             </li>
           </ul>
         </div>
