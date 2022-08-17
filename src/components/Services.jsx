@@ -1,6 +1,7 @@
 import tire1 from '../assets/tire-1.jpg'
 import tire2 from '../assets/tire-2.jpg'
 import tire3 from '../assets/tire-3.jpg'
+import tire4 from '../assets/tire-4.jpg'
 
 const Item = ({ image, subheading, text, inverted, padding }) =>
   inverted ? (
@@ -24,7 +25,7 @@ const Item = ({ image, subheading, text, inverted, padding }) =>
 export default function Services() {
   return (
     <div className='pb-40 scroll-mt-7' id='services'>
-      <h1 className='heading mb-8'>U nás Vám nic chybět nebude</h1>
+      <h1 className='heading mb-8'>Veškeré služby, které jsou potřeba</h1>
       <div className='grid'>
         <Item
           image={tire1}
@@ -43,6 +44,13 @@ export default function Services() {
           image={tire3}
           subheading='prodej ojetých pneumatik'
           text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+          padding
+        />
+        <Item
+          image={tire4}
+          subheading='TPMS instalace a diagnostika'
+          text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+          inverted
         />
       </div>
     </div>
