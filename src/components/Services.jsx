@@ -26,7 +26,7 @@ const Item = ({ image, subheading, text, inverted, padding }) =>
 export default function Services() {
   return (
     <Container>
-      <div className='pb-40 scroll-mt-7' id='services'>
+      <div className='py-24 scroll-mt-7' id='services'>
         <h1 className='darkheading mb-8'>Veškeré služby, které jsou potřeba</h1>
         <div className='grid'>
           <Item
