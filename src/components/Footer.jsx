@@ -6,14 +6,14 @@ export default function Footer() {
       <div className='py-6 sm:py-8 text-center'>
         <div className='grid sm:grid-cols-2'>
           <ul className='sm:text-left'>
-            <li className='subheading pb-2 sm:pb-4'>
-              <h1>odkazy</h1>
+            <li>
+              <h1 className='subheading pb-2 sm:pb-3'>odkazy</h1>
             </li>
             <li>
               <a
                 href='https://www.facebook.com/marketplace/profile/100078154283635/?ref=share_attachment'
                 target='_blank'
-                className='link sm:text-lg'
+                className='link font-normal'
               >
                 Facebook Marketplace
               </a>
@@ -22,7 +22,7 @@ export default function Footer() {
               <a
                 href='https://www.bazos.cz/search.php?hledat=777004000&rubriky=www&hlokalita=&humkreis=25&cenaod=&cenado=&Submit=Hledat&kitx=ano'
                 target='_blank'
-                className='link sm:text-lg'
+                className='link font-normal'
               >
                 Bazoš
               </a>
@@ -31,7 +31,7 @@ export default function Footer() {
               <a
                 href='https://goo.gl/maps/zsaWsHR8UZAxUF7j6'
                 target='_blank'
-                className='link sm:text-lg'
+                className='link font-normal'
               >
                 Mapy Google
               </a>
@@ -39,13 +39,13 @@ export default function Footer() {
           </ul>
           <ul className='sm:text-left pt-8 sm:pt-0'>
             <li>
-              <h1 className='subheading pb-2 sm:pb-4'>kontakt</h1>
+              <h1 className='subheading pb-2 sm:pb-3'>kontakt</h1>
             </li>
             <li>
-              <p className='text'>ladikmoto@seznam.cz</p>
+              <p className='text text-sm sm:text-base'>ladikmoto@seznam.cz</p>
             </li>
             <li>
-              <p className='text'>+420 777 004 000</p>
+              <p className='text text-sm sm:text-base'>+420 777 004 000</p>
             </li>
           </ul>
         </div>
