@@ -9,7 +9,7 @@ export default function Hero() {
         id='info'
       >
         <div>
-          <p className='text'>hello</p>
+          <h1 className='heading'>levně a rychle</h1>
         </div>
         <Map />
       </div>
