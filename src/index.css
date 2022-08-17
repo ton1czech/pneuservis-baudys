@@ -10,7 +10,7 @@
 
 @layer components {
   .logo {
-    @apply font-semibold text-sm sm:text-3xl text-light uppercase;
+    @apply font-semibold text-sm sm:text-xl text-light uppercase;
   }
   .heading {
     @apply font-semibold text-2xl sm:text-5xl text-light;
@@ -31,6 +31,6 @@
     @apply font-normal text-dark sm:text-lg leading-normal;
   }
   .link {
-    @apply font-medium text-light text-sm sm:text-base leading-normal hover:text-accent;
+    @apply font-medium text-light text-sm sm:text-base leading-normal hover:text-accent cursor-pointer;
   }
 }
