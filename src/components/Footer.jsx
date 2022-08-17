@@ -5,15 +5,15 @@ export default function Footer() {
     <Container dark>
       <div className='py-6 sm:py-8 text-center'>
         <div className='grid sm:grid-cols-2'>
-          <ul className='text-left'>
-            <li className='subheading pb-4'>
+          <ul className='sm:text-left'>
+            <li className='subheading pb-2 sm:pb-4'>
               <h1>odkazy</h1>
             </li>
             <li>
               <a
                 href='https://www.facebook.com/marketplace/profile/100078154283635/?ref=share_attachment'
                 target='_blank'
-                className='link text-lg'
+                className='link sm:text-lg'
               >
                 Facebook Marketplace
               </a>
@@ -22,7 +22,7 @@ export default function Footer() {
               <a
                 href='https://www.bazos.cz/search.php?hledat=777004000&rubriky=www&hlokalita=&humkreis=25&cenaod=&cenado=&Submit=Hledat&kitx=ano'
                 target='_blank'
-                className='link text-lg'
+                className='link sm:text-lg'
               >
                 Bazoš
               </a>
@@ -31,15 +31,15 @@ export default function Footer() {
               <a
                 href='https://goo.gl/maps/zsaWsHR8UZAxUF7j6'
                 target='_blank'
-                className='link text-lg'
+                className='link sm:text-lg'
               >
                 Mapy Google
               </a>
             </li>
           </ul>
-          <ul className='text-left'>
+          <ul className='sm:text-left pt-8 sm:pt-0'>
             <li>
-              <h1 className='subheading pb-4'>kontakt</h1>
+              <h1 className='subheading pb-2 sm:pb-4'>kontakt</h1>
             </li>
             <li>
               <p className='text'>ladikmoto@seznam.cz</p>
@@ -49,7 +49,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <p className='text mt-20'>
+        <p className='text mt-12 sm:mt-20'>
           &copy;{new Date().getFullYear()} Daniel Anthony Baudyš. Všechna práva
           vyhrazena.
         </p>
