@@ -15,11 +15,20 @@
   .heading {
     @apply font-semibold text-2xl sm:text-5xl text-light;
   }
+  .darkheading {
+    @apply font-semibold text-2xl sm:text-5xl text-dark;
+  }
   .subheading {
     @apply font-semibold text-xl sm:text-3xl text-light2;
   }
+  .darksubheading {
+    @apply font-semibold text-xl sm:text-3xl text-dark2;
+  }
   .text {
     @apply font-normal text-light sm:text-lg leading-normal;
+  }
+  .darktext {
+    @apply font-normal text-dark sm:text-lg leading-normal;
   }
   .link {
     @apply font-medium text-light text-sm sm:text-base leading-normal hover:text-accent;

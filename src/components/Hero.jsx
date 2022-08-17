@@ -1,15 +1,18 @@
+import Container from './Container'
 import Map from './Map'
 
 export default function Hero() {
   return (
-    <div
-      className='sm:grid sm:grid-cols-2 flex flex-col-reverse w-full pb-40 scroll-mt-7'
-      id='info'
-    >
-      <div>
-        <p className='text'>hello</p>
+    <Container dark>
+      <div
+        className='sm:grid sm:grid-cols-2 flex flex-col-reverse w-full pb-40 scroll-mt-7'
+        id='info'
+      >
+        <div>
+          <p className='text'>hello</p>
+        </div>
+        <Map />
       </div>
-      <Map />
-    </div>
+    </Container>
   )
 }
