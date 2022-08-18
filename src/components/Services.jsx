@@ -31,7 +31,7 @@ const Item = ({ image, subheading, text, inverted, padding }) =>
 export default function Services() {
   return (
     <Container>
-      <div className='py-12 sm:py-24 scroll-mt-7' id='services'>
+      <div className='py-12 sm:py-24' id='services'>
         <Fade top>
           <h1 className='darkheading mb-8'>Veškeré služby na jediném místě</h1>
         </Fade>
