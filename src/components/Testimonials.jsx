@@ -2,6 +2,7 @@ import Container from './Container'
 import man1 from '../assets/man-1.jpg'
 import man2 from '../assets/man-2.jpg'
 import man3 from '../assets/man-3.jpg'
+import { Fade } from 'react-reveal'
 
 const Card = ({ img, name, text }) => (
   <div className='flex items-center justify-center py-20 bg-light rounded-lg relative flex-1 min-h-[400px]'>
@@ -19,19 +20,21 @@ export default function Testimonials() {
   return (
     <Container dark>
       <div className='py-12 sm:py-24'>
-        <div className='flex flex-wrap gap-10'>
-          <Card
-            img={man1}
-            name='Jakub Novák'
-            text='Výborný přístup, dobré ceny.'
-          />
-          <Card
-            img={man2}
-            name='Matyáš Svoboda'
-            text='Dobré ceny, dobrá práce.'
-          />
-          <Card img={man3} name='Vojtěch Dvořák' text='Vstřícnost,ceny 👍' />
-        </div>
+        <Fade bottom right>
+          <div className='flex flex-wrap gap-10'>
+            <Card
+              img={man1}
+              name='Jakub Novák'
+              text='Výborný přístup, dobré ceny.'
+            />
+            <Card
+              img={man2}
+              name='Matyáš Svoboda'
+              text='Dobré ceny, dobrá práce.'
+            />
+            <Card img={man3} name='Vojtěch Dvořák' text='Vstřícnost,ceny 👍' />
+          </div>
+        </Fade>
       </div>
     </Container>
   )
