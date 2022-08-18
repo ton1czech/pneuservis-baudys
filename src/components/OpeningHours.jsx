@@ -1,12 +1,12 @@
 import Container from './Container'
 
 const Item = ({ day, weekend, last }) => (
-  <div className={`grid grid-cols-2 gap-8 ${!last && 'pb-6'}`}>
+  <div className={`grid grid-cols-2 gap-28 ${!last && 'pb-6'}`}>
     <h2 className='darksubheading'>{day}</h2>
     <div className='darktext'>
       {weekend ? (
         <>
-          <p>telefonická domluva</p>
+          <p>domluva</p>
           <p>
             <br />
             {''}
