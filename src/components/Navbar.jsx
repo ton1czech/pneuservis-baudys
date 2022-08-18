@@ -1,6 +1,12 @@
 import { GiFlatTire } from 'react-icons/gi'
 import Container from './Container'
 
+const Link = ({ url, text }) => (
+  <li className='link'>
+    <a href={url}>{text}</a>
+  </li>
+)
+
 export default function Navbar() {
   return (
     <Container dark>
@@ -10,15 +16,9 @@ export default function Navbar() {
           servis baudyš
         </div>
         <ul className='list-none flex gap-3 sm:gap-4 items-center'>
-          <li className='link'>
-            <a href='#info'>Info</a>
-          </li>
-          <li className='link'>
-            <a href='#services'>Služby</a>
-          </li>
-          <li className='link'>
-            <a href='#contact'>Kontakt</a>
-          </li>
+          <Link url='services' text='Služby' />
+          <Link url='#pricelist' text='Ceník' />
+          <Link url='#contact' text='Kontakt' />
         </ul>
       </nav>
     </Container>
