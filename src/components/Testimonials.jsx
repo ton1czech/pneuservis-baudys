@@ -5,7 +5,7 @@ import man3 from '../assets/man-3.jpg'
 import { Fade } from 'react-reveal'
 
 const Card = ({ img, name, text }) => (
-  <div className='flex items-center justify-center py-20 bg-light rounded-lg relative flex-1 min-h-[400px]'>
+  <div className='flex items-center justify-center py-20 bg-light rounded-lg relative flex-1 min-h-[222px] sm:min-h-[400px]'>
     <img
       src={img}
       alt={name}
@@ -20,8 +20,8 @@ export default function Testimonials() {
   return (
     <Container dark>
       <div className='py-12 sm:py-24'>
-        <Fade bottom right>
-          <div className='flex flex-wrap gap-10'>
+        <Fade bottom>
+          <div className='flex flex-col sm:flex-row flex-wrap gap-10'>
             <Card
               img={man1}
               name='Jakub Novák'
