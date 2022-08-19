@@ -1,8 +1,8 @@
 import Container from './Container'
 import { Fade } from 'react-reveal'
 
-const Item = ({ day, weekend, last }) => (
-  <div className={`grid grid-cols-2 gap-28 ${!last && 'pb-4 sm:pb-6'}`}>
+const Item = ({ day, weekend }) => (
+  <div className='grid grid-cols-2 gap-28'>
     <h2 className='darksubheading'>{day}</h2>
     <div className='darktext'>
       {weekend ? (
@@ -28,10 +28,7 @@ export default function OpeningHours() {
     <Container dark>
       <div className='py-12 sm:py-24' id='openinghours'>
         <Fade>
-          <div className='pt-20 pb-10 sm:py-32 bg-light rounded-lg relative grid justify-center'>
-            <h1 className='darkheading absolute left-4 top-4'>
-              Otevírací doba
-            </h1>
+          <div className='py-10 sm:py-16 bg-light rounded-lg relative grid justify-center space-y-6'>
             <Item day='Pondělí' />
             <Item day='Úterý' />
             <Item day='Středa' />
