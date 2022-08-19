@@ -23,9 +23,8 @@ const Item = ({ text }) => (
 
 const OpeningHoursItem = ({ day, weekend, last }) => (
   <li
-    className={`flex justify-center gap-6 sm:gap-0 text-left sm:grid sm:grid-cols-2 text text-sm sm:text-base ${
-      !last && 'pb-3'
-    }`}
+    className='flex justify-center gap-6 sm:gap-0 text-left sm:grid sm:grid-cols-2 text text-sm sm:text-base
+    '
   >
     <p>{day}</p>
     {weekend ? (
@@ -48,7 +47,7 @@ const OpeningHoursItem = ({ day, weekend, last }) => (
 export default function Footer() {
   return (
     <Container dark>
-      <div className='pb-6 sm:pb-8 pt-12 sm:pt-24 text-center'>
+      <div className='py-6 text-center'>
         <Fade top>
           <div className='flex flex-col sm:flex-row justify-between sm:text-left'>
             <ul>
@@ -72,14 +71,14 @@ export default function Footer() {
               <Item text='ladikmoto@seznam.cz' />
               <Item text='+420 777 004 000' />
             </ul>
-            <ul className='hidden sm:block'>
+            <ul className='hidden sm:block space-y-3'>
               <OpeningHoursItem day='Pondělí' />
               <OpeningHoursItem day='Úterý' />
               <OpeningHoursItem day='Středa' />
               <OpeningHoursItem day='Čtvrtek' />
               <OpeningHoursItem day='Pátek' />
               <OpeningHoursItem day='Sobota' weekend />
-              <OpeningHoursItem day='Neděle' weekend last />
+              <OpeningHoursItem day='Neděle' weekend />
             </ul>
           </div>
         </Fade>
