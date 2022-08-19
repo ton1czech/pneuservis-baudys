@@ -4,38 +4,31 @@ import tire3 from '../assets/tire-3.jpg'
 import tire4 from '../assets/tire-4.jpg'
 import tire5 from '../assets/tire-5.jpg'
 import Container from './Container'
-import { Fade } from 'react-reveal'
 
 const Item = ({ image, subheading, text, inverted, padding }) =>
   inverted ? (
-    <Fade left>
-      <div className='grid sm:grid-cols-2 content-center items-center'>
-        <div>
-          <h2 className='darksubheading text-center'>{subheading}</h2>
-          <p className='darktext sm:pr-4'>{text}</p>
-        </div>
-        <img src={image} alt='' className={padding && 'pb-8 sm:pb-0'} />
+    <div className='grid sm:grid-cols-2 content-center items-center'>
+      <div>
+        <h2 className='darksubheading text-center'>{subheading}</h2>
+        <p className='darktext sm:pr-4'>{text}</p>
       </div>
-    </Fade>
+      <img src={image} alt='' className={padding && 'pb-8 sm:pb-0'} />
+    </div>
   ) : (
-    <Fade right>
-      <div className='flex flex-col-reverse sm:grid sm:grid-cols-2 content-center items-center'>
-        <img src={image} alt='' className={padding && 'pb-8 sm:pb-0'} />
-        <div>
-          <h2 className='darksubheading text-center'>{subheading}</h2>
-          <p className='darktext sm:pl-4'>{text}</p>
-        </div>
+    <div className='flex flex-col-reverse sm:grid sm:grid-cols-2 content-center items-center'>
+      <img src={image} alt='' className={padding && 'pb-8 sm:pb-0'} />
+      <div>
+        <h2 className='darksubheading text-center'>{subheading}</h2>
+        <p className='darktext sm:pl-4'>{text}</p>
       </div>
-    </Fade>
+    </div>
   )
 
 export default function Services() {
   return (
     <Container>
       <div className='py-12 sm:py-24' id='services'>
-        <Fade top>
-          <h1 className='darkheading mb-8'>Veškeré služby na jediném místě</h1>
-        </Fade>
+        <h1 className='darkheading mb-8'>Veškeré služby na jediném místě</h1>
         <div className='grid'>
           <Item
             image={tire1}
