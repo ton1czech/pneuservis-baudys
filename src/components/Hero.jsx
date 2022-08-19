@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <Container dark>
       <div
-        className='sm:grid sm:grid-cols-2 flex flex-col-reverse w-full pb-12 sm:pb-24'
+        className='sm:grid sm:grid-cols-2 flex flex-col-reverse w-full pt-6 pb-12 sm:pb-24'
         id='home'
       >
         <Fade left>

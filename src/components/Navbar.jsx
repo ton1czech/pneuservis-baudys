@@ -26,6 +26,7 @@ export default function Navbar() {
           </ul>
         </Fade>
       </nav>
+      <div className='h-[1px] w-full bg-light' />
     </Container>
   )
 }
