@@ -3,8 +3,10 @@ import Container from './Container'
 import { Fade } from 'react-reveal'
 
 const Link = ({ url, text }) => (
-  <li className='link'>
-    <a href={url}>{text}</a>
+  <li>
+    <a className='link' href={url}>
+      {text}
+    </a>
   </li>
 )
 
@@ -21,12 +23,14 @@ export default function Navbar() {
         <Fade top>
           <ul className='list-none flex gap-3 sm:gap-4 items-center'>
             <Link url='#services' text='Služby' />
+            <div className='hidden sm:block'>
+              <Link url='#openinghours' text='Otevírací doba' />
+            </div>
             <Link url='#pricelist' text='Ceník' />
-            <Link url='#contact' text='Kontakt' />
           </ul>
         </Fade>
       </nav>
-      <div className='h-[1px] w-full bg-light' />
+      <div className='h-[1px] w-full bg-light opacity-50' />
     </Container>
   )
 }
