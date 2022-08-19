@@ -83,7 +83,8 @@ export default function Footer() {
           </div>
         </Fade>
         <Fade bottom>
-          <p className='text text-xs mt-12 sm:mt-20'>
+          <p className='text text-xs mt-12 sm:mt-20'>Hájek 10, Kdyně 345 06</p>
+          <p className='text text-xs mt-4 sm:mt-8'>
             &copy;{new Date().getFullYear()} Daniel Anthony Baudyš. Všechna
             práva vyhrazena.
           </p>
