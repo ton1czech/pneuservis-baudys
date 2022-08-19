@@ -26,7 +26,7 @@ const Item = ({ day, weekend, last }) => (
 export default function OpeningHours() {
   return (
     <Container dark>
-      <div className='py-12 sm:py-24'>
+      <div className='py-12 sm:py-24' id='openinghours'>
         <Fade>
           <div className='pt-20 pb-10 sm:py-32 bg-light rounded-lg relative grid justify-center'>
             <h1 className='darkheading absolute left-4 top-4'>

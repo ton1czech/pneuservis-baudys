@@ -19,7 +19,7 @@ const Card = ({ img, name, text }) => (
 export default function Testimonials() {
   return (
     <Container dark>
-      <div className='py-12 sm:py-24'>
+      <div className='py-12 sm:py-24' id='testimonials'>
         <Fade bottom>
           <div className='flex flex-col sm:flex-row flex-wrap gap-10'>
             <Card

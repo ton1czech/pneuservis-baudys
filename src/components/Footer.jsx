@@ -1,9 +1,15 @@
 import Container from './Container'
 import { Fade } from 'react-reveal'
+import { SiFacebook, SiGooglemaps } from 'react-icons/si'
 
-const Link = ({ url, text }) => (
+const Link = ({ url, text, logo }) => (
   <li>
-    <a href={url} target='_blank' className='link font-normal'>
+    <a
+      href={url}
+      target='_blank'
+      className='link font-normal flex gap-1 items-center justify-center sm:justify-start'
+    >
+      <div className='font-bold'>{logo}</div>
       {text}
     </a>
   </li>
@@ -54,17 +60,27 @@ export default function Footer() {
             <div>
               <Heading text='Odkazy' first />
               <ul>
+                <Link url='#home' text='Domů' />
+                <Link url='#services' text='Služby' />
+                <Link url='#openinghours' text='Otevírací doba' />
+                <Link url='#pricelist' text='Ceník' />
+                <Link url='#testimonials' text='Recenze' />
+                <Link url='#contact' text='Kontakt' />
+                <div className='h-[1px] w-full bg-light my-1' />
                 <Link
                   url='https://www.facebook.com/marketplace/profile/100078154283635/?ref=share_attachment'
                   text='Facebook Marketplace'
+                  logo={<SiFacebook />}
                 />
                 <Link
                   url='https://www.bazos.cz/search.php?hledat=777004000&rubriky=www&hlokalita=&humkreis=25&cenaod=&cenado=&Submit=Hledat&kitx=ano'
                   text='Bazoš'
+                  logo='@('
                 />
                 <Link
                   url='https://goo.gl/maps/zsaWsHR8UZAxUF7j6'
                   text='Mapy Google'
+                  logo={<SiGooglemaps />}
                 />
               </ul>
             </div>
