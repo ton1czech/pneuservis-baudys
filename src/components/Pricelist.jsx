@@ -19,8 +19,8 @@ export default function Pricelist() {
           <div className='p-10 sm:p-16 bg-dark rounded-lg relative grid justify-center space-y-4 sm:space-y-6'>
             <Item price='500' text='přezutí a vyvážení (4ks)' />
             <Item price='300' text='pneumatika' />
-            <Item price='500' text='chytré ventýlky (4ks)' />
-            <Item price='500' text='diagnostika ventýlků' />
+            <Item price='500' text='chytré ventilky (4ks)' />
+            <Item price='500' text='diagnostika ventilků' />
           </div>
         </Fade>
       </div>
