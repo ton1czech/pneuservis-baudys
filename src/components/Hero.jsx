@@ -12,16 +12,16 @@ export default function Hero() {
   return (
     <Container dark>
       <div
-        className='sm:grid sm:grid-cols-2 flex flex-col-reverse w-full pt-6 pb-12 sm:pb-24'
+        className='sm:grid sm:grid-cols-2 flex flex-col w-full pt-6 pb-12 sm:pb-24'
         id='home'
       >
         <Fade left>
-          <div className='hidden sm:flex flex-col justify-between'>
-            <h1 className='heading leading-snug'>
+          <div className='flex flex-col justify-between'>
+            <h1 className='heading leading-snug mb-6 sm:mb-0'>
               Veškeré služby pro Vaše auto na jednom místě
             </h1>
             <Fade bottom>
-              <div className='flex flex-col space-y-6'>
+              <div className='hidden sm:flex flex-col space-y-6'>
                 <Card text='levné' />
                 <Card text='rychlé' />
                 <Card text='spolehlivé' />
