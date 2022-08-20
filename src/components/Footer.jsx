@@ -47,7 +47,7 @@ const OpeningHoursItem = ({ day, weekend, last }) => (
 export default function Footer() {
   return (
     <Container dark>
-      <div className='h-[1px] w-full bg-light opacity-50' />
+      <div className='h-px w-full bg-light opacity-50' />
       <div className='py-6 text-center'>
         <Fade top>
           <div className='flex flex-col sm:flex-row justify-between sm:text-left'>
