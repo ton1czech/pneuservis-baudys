@@ -46,9 +46,16 @@
     opacity: 15%;
   }
   .cover {
-    background: rgb(252, 247, 255);
     background: linear-gradient(
       180deg,
+      rgba(252, 247, 255, 0) 0%,
+      rgba(252, 247, 255, 0.5) 10%,
+      rgba(252, 247, 255, 1) 80%
+    );
+  }
+  .reversecover {
+    background: linear-gradient(
+      0deg,
       rgba(252, 247, 255, 0) 0%,
       rgba(252, 247, 255, 0.5) 10%,
       rgba(252, 247, 255, 1) 80%

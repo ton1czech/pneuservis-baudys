@@ -89,6 +89,12 @@ export default function Services() {
           alt='dots'
         />
         <div className='cover hidden 2xl:block absolute top-4 left-4 w-64 h-[26rem]' />
+        <img
+          className='hidden 2xl:block absolute bottom-4 right-4'
+          src={dots}
+          alt='dots'
+        />
+        <div className='reversecover hidden 2xl:block absolute bottom-4 right-4 w-64 h-[26rem]' />
       </div>
     </Container>
   )
