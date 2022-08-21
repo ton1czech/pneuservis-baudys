@@ -5,6 +5,7 @@ import tire4 from '../assets/tire-4.jpg'
 import tire5 from '../assets/tire-5.jpg'
 import Container from './Container'
 import { Fade } from 'react-reveal'
+import { AiFillTag } from 'react-icons/ai'
 
 const Item = ({ image, subheading, text, inverted, banner, buy }) =>
   inverted ? (
@@ -14,10 +15,11 @@ const Item = ({ image, subheading, text, inverted, banner, buy }) =>
           <h2 className='darksubheading text-2xl sm:text-3xl text-left sm:text-center mb-2'>
             {subheading}
           </h2>
-          <p className='darktext sm:pr-4'>{text}</p>
+          <p className='darktext sm:pr-4 text-justify'>{text}</p>
           {banner && (
             <p className='px-4 py-1 mt-3 font-semibold text-2xl rounded text-dark bg-accent w-min'>
               Novinka!
+              {<AiFillTag />}
             </p>
           )}
         </div>
@@ -32,9 +34,10 @@ const Item = ({ image, subheading, text, inverted, banner, buy }) =>
           <h2 className='darksubheading text-2xl sm:text-3xl text-left sm:text-center mb-2'>
             {subheading}
           </h2>
-          <p className='darktext sm:pl-4'>{text}</p>
+          <p className='darktext sm:pl-4 text-justify'>{text}</p>
           {banner && (
-            <p className='px-4 py-1 sm:ml-4 my-3 sm:mb-0 font-semibold text-2xl rounded text-dark bg-accent w-min'>
+            <p className='flex items-center gap-1 px-4 py-1 sm:ml-4 my-3 sm:mb-0 font-semibold text-2xl rounded text-dark bg-accent w-min'>
+              {<AiFillTag />}
               Novinka!
             </p>
           )}
