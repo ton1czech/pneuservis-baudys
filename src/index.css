@@ -33,4 +33,16 @@
   .link {
     @apply font-medium text-light text-sm sm:text-base leading-normal hover:text-accent cursor-pointer ease-in duration-100;
   }
+  .circle-gradient {
+    background-image: radial-gradient(
+      circle,
+      #150b34,
+      #1c1144,
+      #241554,
+      #2c1a65,
+      #351e76
+    );
+    filter: blur(75px);
+    opacity: 15%;
+  }
 }

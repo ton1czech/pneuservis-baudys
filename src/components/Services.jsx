@@ -11,7 +11,7 @@ const Item = ({ image, subheading, text, inverted, banner, buy }) =>
   inverted ? (
     <Fade left>
       <div className='grid sm:grid-cols-2 content-center items-center'>
-        <div>
+        <div className='relative'>
           <h2 className='darksubheading text-2xl sm:text-3xl text-left sm:text-center mb-2'>
             {subheading}
           </h2>
@@ -22,6 +22,7 @@ const Item = ({ image, subheading, text, inverted, banner, buy }) =>
               {<AiFillTag />}
             </p>
           )}
+          <div className='absolute circle-gradient left-0 top-0 w-full h-full' />
         </div>
         <img src={image} alt={subheading} />
       </div>
@@ -30,7 +31,7 @@ const Item = ({ image, subheading, text, inverted, banner, buy }) =>
     <Fade right>
       <div className='flex flex-col-reverse sm:grid sm:grid-cols-2 content-center items-center'>
         <img src={image} alt={subheading} />
-        <div>
+        <div className='relative'>
           <h2 className='darksubheading text-2xl sm:text-3xl text-left sm:text-center mb-2'>
             {subheading}
           </h2>
@@ -41,6 +42,7 @@ const Item = ({ image, subheading, text, inverted, banner, buy }) =>
               Novinka!
             </p>
           )}
+          <div className='absolute circle-gradient left-0 top-0 w-full h-full' />
         </div>
       </div>
     </Fade>
