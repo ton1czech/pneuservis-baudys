@@ -5,7 +5,7 @@ export default function Container({ children, dark }) {
         dark ? 'bg-dark' : 'bg-light'
       } w-full overflow-hidden font-poppins px-5`}
     >
-      <div className={`xl:max-w-[60%] m-auto`}>{children}</div>
+      <div className={`2xl:max-w-[60%] m-auto`}>{children}</div>
     </div>
   )
 }
