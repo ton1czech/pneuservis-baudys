@@ -18,7 +18,7 @@ const Item = ({ image, subheading, text, inverted, banner, buy }) =>
           </h2>
           <p className='darktext sm:pr-4 text-justify'>{text}</p>
           {banner && (
-            <p className='px-4 py-1 mt-3 font-semibold text-2xl rounded text-dark bg-accent w-min'>
+            <p className='px-4 py-1 mt-3 font-semibold text-2xl rounded text-dark tracking-widest bg-accent w-min'>
               Novinka!
               {<AiFillTag />}
             </p>
@@ -38,7 +38,7 @@ const Item = ({ image, subheading, text, inverted, banner, buy }) =>
           </h2>
           <p className='darktext sm:pl-4 text-justify'>{text}</p>
           {banner && (
-            <p className='flex items-center gap-1 px-4 py-1 sm:ml-4 my-3 sm:mb-0 font-semibold text-2xl rounded text-dark bg-accent w-min'>
+            <p className='flex items-center gap-1 px-4 py-1 sm:ml-4 my-3 sm:mb-0 font-semibold text-2xl rounded text-dark tracking-widest bg-accent w-min'>
               {<AiFillTag />}
               Novinka!
             </p>
