@@ -35,7 +35,7 @@ export default function Hero() {
         <Fade right>
           <div className='relative'>
             <Map />
-            <div className='hidden 2xl:block absolute top-36 -right-72'>
+            <div className='hidden 2xl:block absolute top-44 -right-72'>
               <TbArrowLoopLeft2 className='text-light text-[8rem]' />
               <p className='text-light text-2xl font-semibold'>
                 Najdi si k nám cestu!
