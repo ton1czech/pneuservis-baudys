@@ -4,7 +4,7 @@ import { Fade } from 'react-reveal'
 const Item = ({ price, text }) => (
   <>
     <div className='grid grid-cols-[2fr_1fr] gap-12 sm:gap-20'>
-      <h2 className='subheading sm:text-3xl text-base'>{text}</h2>
+      <h2 className='subheading font-normal sm:text-3xl text-base'>{text}</h2>
       <p className='subheading sm:text-2xl text-base'>{price} Kč</p>
     </div>
     <div className='h-px bg-light w-full opacity-50' />

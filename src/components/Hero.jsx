@@ -17,7 +17,7 @@ export default function Hero() {
       >
         <Fade left>
           <div className='flex flex-col justify-between'>
-            <h1 className='heading leading-snug mb-6 sm:mb-0'>
+            <h1 className='heading leading-snug mb-6 sm:mb-0 pr-4'>
               Veškeré služby pro Vaše auto na jednom místě
             </h1>
             <Fade bottom>
