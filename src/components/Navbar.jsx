@@ -1,11 +1,20 @@
 import { GiFlatTire } from 'react-icons/gi'
+import { BiLinkExternal } from 'react-icons/bi'
 import Container from './Container'
 import { Fade } from 'react-reveal'
 
-const Link = ({ url, text }) => (
+const Link = ({ url, text, external }) => (
   <li>
-    <a className='link' href={url}>
+    <a
+      className={`link flex items-center gap-1 ${
+        external &&
+        'bg-accent rounded py-1 px-2 hover:text-light hover:scale-[98%]'
+      }`}
+      href={url}
+      target={`${external ? '_blank' : ''}`}
+    >
       {text}
+      {external && <BiLinkExternal />}
     </a>
   </li>
 )
@@ -23,10 +32,15 @@ export default function Navbar() {
         <Fade top>
           <ul className='list-none flex gap-3 sm:gap-4 items-center'>
             <Link url='#services' text='Služby' />
+            <Link url='#pricelist' text='Ceník' />
             <div className='hidden sm:block'>
               <Link url='#openinghours' text='Otevírací doba' />
             </div>
-            <Link url='#pricelist' text='Ceník' />
+            <Link
+              url='https://www.bazos.cz/search.php?hledat=777004000&rubriky=www&hlokalita=&humkreis=25&cenaod=&cenado=&Submit=Hledat&kitx=ano'
+              text='Koupit'
+              external
+            />
           </ul>
         </Fade>
       </nav>

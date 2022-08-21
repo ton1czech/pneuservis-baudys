@@ -31,6 +31,6 @@
     @apply font-normal text-dark sm:text-lg leading-normal;
   }
   .link {
-    @apply font-medium text-light text-sm sm:text-base leading-normal hover:text-accent cursor-pointer;
+    @apply font-medium text-light text-sm sm:text-base leading-normal hover:text-accent cursor-pointer ease-in duration-100;
   }
 }
