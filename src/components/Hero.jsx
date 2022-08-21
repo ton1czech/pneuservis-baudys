@@ -1,10 +1,13 @@
 import Container from './Container'
 import Map from './Map'
 import { Fade } from 'react-reveal'
+import { TbArrowLoopLeft2 } from 'react-icons/tb'
 
 const Card = ({ text }) => (
   <div className='bg-light rounded-md w-min h-min'>
-    <h1 className='darksubheading uppercase p-4 tracking-widest'>{text}</h1>
+    <h1 className='darksubheading text-2xl uppercase p-4 tracking-widest'>
+      {text}
+    </h1>
   </div>
 )
 
@@ -21,7 +24,7 @@ export default function Hero() {
               Veškeré služby pro Vaše auto na jednom místě
             </h1>
             <Fade bottom>
-              <div className='hidden sm:flex flex-col space-y-6'>
+              <div className='hidden lg:flex flex-col space-y-6'>
                 <Card text='levné' />
                 <Card text='rychlé' />
                 <Card text='spolehlivé' />
@@ -30,7 +33,15 @@ export default function Hero() {
           </div>
         </Fade>
         <Fade right>
-          <Map />
+          <div className='relative'>
+            <Map />
+            <div className='hidden 2xl:block absolute top-36 -right-72'>
+              <TbArrowLoopLeft2 className='text-light text-[8rem]' />
+              <p className='text-light text-2xl font-semibold'>
+                Najdi si k nám cestu!
+              </p>
+            </div>
+          </div>
         </Fade>
       </div>
     </Container>
