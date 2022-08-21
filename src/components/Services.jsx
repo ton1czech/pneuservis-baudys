@@ -6,6 +6,7 @@ import tire5 from '../assets/tire-5.jpg'
 import Container from './Container'
 import { Fade } from 'react-reveal'
 import { AiFillTag } from 'react-icons/ai'
+import dots from '../assets/dots.svg'
 
 const Item = ({ image, subheading, text, inverted, banner, buy }) =>
   inverted ? (
@@ -82,6 +83,12 @@ export default function Services() {
             text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
           />
         </div>
+        <img
+          className='hidden 2xl:block absolute top-4 left-4'
+          src={dots}
+          alt='dots'
+        />
+        <div className='cover hidden 2xl:block absolute top-4 left-4 w-64 h-[26rem]' />
       </div>
     </Container>
   )
