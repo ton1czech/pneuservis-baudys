@@ -2,7 +2,7 @@ import Container from './Container'
 import { Fade } from 'react-reveal'
 
 const Item = ({ day, weekend }) => (
-  <div className='grid grid-cols-2 gap-28'>
+  <div className='grid grid-cols-2 gap-12 sm:gap-28'>
     <h2 className='darksubheading'>{day}</h2>
     <div className='darktext'>
       {weekend ? (
