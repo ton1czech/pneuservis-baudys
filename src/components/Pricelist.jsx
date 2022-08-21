@@ -1,5 +1,6 @@
 import Container from './Container'
 import { Fade } from 'react-reveal'
+import { GiMoneyStack } from 'react-icons/gi'
 
 const Item = ({ price, text }) => (
   <>
@@ -21,6 +22,7 @@ export default function Pricelist() {
             <Item price='300' text='pneumatika' />
             <Item price='500' text='chytré ventilky (4ks)' />
             <Item price='500' text='diagnostika ventilků' />
+            <GiMoneyStack className='block text-light opacity-5 absolute left-0 top-0 w-full h-full ' />
           </div>
         </Fade>
       </div>

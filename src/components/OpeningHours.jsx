@@ -1,5 +1,6 @@
 import Container from './Container'
 import { Fade } from 'react-reveal'
+import { FiClock } from 'react-icons/fi'
 
 const Item = ({ day, weekend }) => (
   <div className='grid grid-cols-2 gap-12 sm:gap-28'>
@@ -36,6 +37,7 @@ export default function OpeningHours() {
             <Item day='Pátek' />
             <Item day='Sobota' weekend />
             <Item day='Neděle' weekend />
+            <FiClock className='text-dark opacity-5 absolute left-0 bottom-0 w-full h-full' />
           </div>
         </Fade>
       </div>
