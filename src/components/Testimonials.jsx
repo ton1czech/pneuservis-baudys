@@ -4,6 +4,7 @@ import man2 from '../assets/man-2.jpg'
 import man3 from '../assets/man-3.jpg'
 import { Fade } from 'react-reveal'
 import { AiFillStar } from 'react-icons/ai'
+import { SiGooglemaps } from 'react-icons/si'
 
 const Card = ({ img, name, text }) => (
   <div className='flex items-center justify-center py-20 bg-light rounded-lg relative flex-1 min-h-[222px] sm:min-h-[400px]'>
@@ -43,6 +44,17 @@ export default function Testimonials() {
             <Card img={man3} name='Vojtěch Dvořák' text='Vstřícnost,ceny 👍' />
           </div>
         </Fade>
+      </div>
+      <div className='hidden 2xl:block absolute top-60 left-8'>
+        <p className='text text-xl mb-2'>Nezapomeň nás ohodnotit!</p>
+        <a
+          href='https://goo.gl/maps/zsaWsHR8UZAxUF7j6'
+          target='_blank'
+          className='bg-accent cursor-pointer py-2 flex gap-1 items-center justify-center text-2xl uppercase font-semibold hover:scale-[99%]'
+        >
+          <SiGooglemaps className='darktext w-7 h-7' />
+          <p>Mapy Google</p>
+        </a>
       </div>
     </Container>
   )
