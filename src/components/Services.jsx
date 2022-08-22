@@ -12,11 +12,11 @@ const Item = ({ image, subheading, text, inverted, banner, buy }) =>
   inverted ? (
     <Fade left>
       <div className='grid sm:grid-cols-2 content-center items-center'>
-        <div className='relative'>
-          <h2 className='darksubheading text-2xl sm:text-3xl text-left sm:text-center mb-2'>
+        <div className='relative sm:pr-4'>
+          <h2 className='darksubheading text-2xl sm:text-4xl text-left mb-2'>
             {subheading}
           </h2>
-          <p className='darktext sm:pr-4 text-justify'>{text}</p>
+          <p className='darktext text-justify'>{text}</p>
           {banner && (
             <p className='px-4 py-1 mt-3 font-semibold text-2xl rounded text-dark tracking-widest bg-accent w-min'>
               Novinka!
@@ -32,13 +32,13 @@ const Item = ({ image, subheading, text, inverted, banner, buy }) =>
     <Fade right>
       <div className='flex flex-col-reverse sm:grid sm:grid-cols-2 content-center items-center'>
         <img src={image} alt={subheading} />
-        <div className='relative'>
-          <h2 className='darksubheading text-2xl sm:text-3xl text-left sm:text-center mb-2'>
+        <div className='relative sm:pl-4'>
+          <h2 className='darksubheading text-2xl sm:text-4xl text-left mb-2'>
             {subheading}
           </h2>
-          <p className='darktext sm:pl-4 text-justify'>{text}</p>
+          <p className='darktext text-justify'>{text}</p>
           {banner && (
-            <p className='flex items-center gap-1 px-4 py-1 sm:ml-4 my-3 sm:mb-0 font-semibold text-2xl rounded text-dark tracking-widest bg-accent w-min'>
+            <p className='flex items-center gap-1 px-4 py-1 my-3 sm:mb-0 font-semibold text-2xl rounded text-dark tracking-widest bg-accent w-min'>
               {<AiFillTag />}
               Novinka!
             </p>
