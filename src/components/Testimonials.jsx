@@ -30,7 +30,20 @@ export default function Testimonials() {
     <Container dark>
       <div className='pt-12 sm:pt-24 pb-6' id='testimonials'>
         <Fade bottom>
-          <div className='flex flex-col sm:flex-row flex-wrap gap-10'>
+          <div className='flex flex-col sm:flex-row flex-wrap gap-10 relative'>
+            <Fade left>
+              <div className='hidden 2xl:block absolute bottom-40 -left-72'>
+                <p className='text text-xl mb-2'>Nezapomeň nás ohodnotit!</p>
+                <a
+                  href='https://goo.gl/maps/zsaWsHR8UZAxUF7j6'
+                  target='_blank'
+                  className='bg-accent cursor-pointer py-2 flex gap-1 items-center justify-center text-2xl uppercase font-semibold hover:scale-[99%]'
+                >
+                  <SiGooglemaps className='darktext w-7 h-7' />
+                  <p>Mapy Google</p>
+                </a>
+              </div>
+            </Fade>
             <Card
               img={man1}
               name='Jakub Novák'
@@ -44,17 +57,6 @@ export default function Testimonials() {
             <Card img={man3} name='Vojtěch Dvořák' text='Vstřícnost,ceny 👍' />
           </div>
         </Fade>
-      </div>
-      <div className='hidden 2xl:block absolute top-60 left-8'>
-        <p className='text text-xl mb-2'>Nezapomeň nás ohodnotit!</p>
-        <a
-          href='https://goo.gl/maps/zsaWsHR8UZAxUF7j6'
-          target='_blank'
-          className='bg-accent cursor-pointer py-2 flex gap-1 items-center justify-center text-2xl uppercase font-semibold hover:scale-[99%]'
-        >
-          <SiGooglemaps className='darktext w-7 h-7' />
-          <p>Mapy Google</p>
-        </a>
       </div>
     </Container>
   )
