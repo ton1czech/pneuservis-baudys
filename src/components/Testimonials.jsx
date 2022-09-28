@@ -7,7 +7,7 @@ import { AiFillStar } from 'react-icons/ai'
 import { SiGooglemaps } from 'react-icons/si'
 
 const Card = ({ img, name, text }) => (
-  <div className='flex items-center justify-center py-20 bg-light rounded-lg relative flex-1 min-h-[222px] sm:min-h-[400px]'>
+  <div className='flex items-center justify-center py-20 bg-light rounded-lg relative min-h-[222px] sm:min-h-[400px]'>
     <img
       src={img}
       alt={name}
@@ -30,7 +30,7 @@ export default function Testimonials() {
     <Container dark>
       <div className='pt-12 sm:pt-24 pb-6' id='testimonials'>
         <Fade bottom>
-          <div className='flex flex-col sm:flex-row flex-wrap gap-10 relative'>
+          <div className='grid sm:grid-cols-3 flex-wrap gap-10 relative'>
             <Fade left>
               <div className='hidden 2xl:block absolute bottom-40 -left-72'>
                 <p className='text text-xl mb-2'>Nezapomeň nás ohodnotit!</p>
