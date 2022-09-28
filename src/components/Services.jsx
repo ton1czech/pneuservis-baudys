@@ -22,7 +22,7 @@ const Item = ({ image, subheading, text, inverted, banner, buy }) =>
               {<AiFillTag />}
             </p>
           )}
-          <div className='absolute circle-gradient left-0 top-0 w-full h-full' />
+          <div className='absolute circle-gradient left-0 top-0 w-full h-full pointer-events-none' />
         </div>
         <img src={image} alt={subheading} />
       </div>
@@ -41,7 +41,7 @@ const Item = ({ image, subheading, text, inverted, banner, buy }) =>
               Novinka!
             </p>
           )}
-          <div className='absolute circle-gradient left-0 top-0 w-full h-full' />
+          <div className='absolute circle-gradient left-0 top-0 w-full h-full pointer-events-none' />
         </div>
       </div>
     </Fade>
