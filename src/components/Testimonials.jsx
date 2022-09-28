@@ -37,7 +37,7 @@ export default function Testimonials() {
                 <a
                   href='https://goo.gl/maps/zsaWsHR8UZAxUF7j6'
                   target='_blank'
-                  className='bg-accent cursor-pointer py-2 flex gap-1 items-center justify-center text-2xl uppercase font-semibold hover:scale-[99%]'
+                  className='bg-accent cursor-pointer py-2 flex gap-1 items-center justify-center text-2xl uppercase font-semibold hover:scale-[99%] rounded-md'
                 >
                   <SiGooglemaps className='darktext w-7 h-7' />
                   <p>Mapy Google</p>
