@@ -24,7 +24,7 @@ export default function Hero() {
               Veškeré služby pro Vaše kola na jednom místě
             </h1>
             <Fade bottom>
-              <div className='hidden lg:flex flex-col space-y-6'>
+              <div className='hidden lg:flex flex-col space-y-3'>
                 <Card text='levné' />
                 <Card text='rychlé' />
                 <Card text='spolehlivé' />
