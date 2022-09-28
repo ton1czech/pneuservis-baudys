@@ -37,7 +37,7 @@ export default function OpeningHours() {
             <Item day='Pátek' />
             <Item day='Sobota' weekend />
             <Item day='Neděle' weekend />
-            <FiClock className='text-dark opacity-5 absolute left-0 bottom-0 w-full h-full' />
+            <FiClock className='text-dark opacity-5 absolute left-0 bottom-0 w-full h-full pointer-events-none' />
           </div>
         </Fade>
       </div>
