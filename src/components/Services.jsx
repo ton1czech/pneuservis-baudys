@@ -12,7 +12,7 @@ const Item = ({ image, subheading, text, inverted, banner, buy }) =>
   inverted ? (
     <Fade left>
       <div className='grid sm:grid-cols-2 content-center items-center'>
-        <div className='relative sm:pr-4'>
+        <div className='flex flex-col items-center relative sm:pr-4'>
           <h2 className='darksubheading text-2xl sm:text-4xl text-center mb-2'>
             {subheading}
           </h2>
@@ -31,7 +31,7 @@ const Item = ({ image, subheading, text, inverted, banner, buy }) =>
     <Fade right>
       <div className='flex flex-col-reverse sm:grid sm:grid-cols-2 content-center items-center'>
         <img src={image} alt={subheading} />
-        <div className='relative sm:pl-4'>
+        <div className='flex flex-col items-center relative sm:pl-4'>
           <h2 className='darksubheading text-2xl sm:text-4xl text-center mb-2'>
             {subheading}
           </h2>
