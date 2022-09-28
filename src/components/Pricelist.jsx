@@ -22,7 +22,7 @@ export default function Pricelist() {
             <Item price='300' text='pneumatika' />
             <Item price='500' text='chytré ventilky (4ks)' />
             <Item price='500' text='diagnostika ventilků' />
-            <GiMoneyStack className='block text-light opacity-5 absolute left-0 top-0 w-full h-full ' />
+            <GiMoneyStack className='block text-light opacity-5 absolute left-0 top-0 w-full h-full pointer-events-none' />
           </div>
         </Fade>
       </div>
