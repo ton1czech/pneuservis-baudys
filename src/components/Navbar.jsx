@@ -7,8 +7,7 @@ const Link = ({ url, text, external }) => (
   <li>
     <a
       className={`link flex items-center gap-1 ${
-        external &&
-        'bg-accent rounded py-1 px-2 hover:text-light hover:scale-[98%]'
+        external && 'bg-accent rounded py-1 px-2 text-dark hover:scale-[98%]'
       }`}
       href={url}
       target={`${external ? '_blank' : ''}`}
