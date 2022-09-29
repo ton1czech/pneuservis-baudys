@@ -1,6 +1,8 @@
 import Container from './Container'
 import { Fade } from 'react-reveal'
 import { SiFacebook, SiGooglemaps } from 'react-icons/si'
+import { AiFillPhone } from 'react-icons/ai'
+import { MdEmail } from 'react-icons/md'
 
 const Link = ({ url, text, logo }) => (
   <li>
@@ -15,9 +17,12 @@ const Link = ({ url, text, logo }) => (
   </li>
 )
 
-const Item = ({ text }) => (
+const Item = ({ text, logo }) => (
   <li>
-    <p className='text text-sm sm:text-base'>{text}</p>
+    <p className='text text-sm sm:text-base flex justify-center sm:justify-start items-center gap-1'>
+      <div className='font-bold'>{logo}</div>
+      {text}
+    </p>
   </li>
 )
 
@@ -69,8 +74,8 @@ export default function Footer() {
               />
             </ul>
             <ul className='mt-12 sm:mt-0'>
-              <Item text='ladikmoto@seznam.cz' />
-              <Item text='+420 777 004 000' />
+              <Item logo={<MdEmail />} text='ladikmoto@seznam.cz' />
+              <Item logo={<AiFillPhone />} text='+420 777 004 000' />
             </ul>
             <ul className='hidden sm:block space-y-3'>
               <OpeningHoursItem day='Pondělí' />
