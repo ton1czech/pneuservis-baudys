@@ -21,7 +21,7 @@ const Item = ({ text }) => (
   </li>
 )
 
-const OpeningHoursItem = ({ day, weekend, last }) => (
+const OpeningHoursItem = ({ day, weekend }) => (
   <li
     className='flex justify-center gap-6 sm:gap-0 text-left sm:grid sm:grid-cols-2 text text-sm sm:text-base
     '
@@ -85,7 +85,16 @@ export default function Footer() {
         </Fade>
         <Fade bottom>
           <p className='text text-xs mt-12 sm:mt-20'>Hájek 10, Kdyně 345 06</p>
-          <p className='text text-xs mt-4 sm:mt-8'>
+          <div className='mt-4 sm:mt-8'>
+            <a
+              className='text text-xs  hover:text-accent'
+              href='https://www.flaticon.com/free-icons/tire'
+              target='_blank'
+            >
+              Tire icons created by Vichanon Chaimsuk - Flaticon
+            </a>
+          </div>
+          <p className='text text-xs mt-2 sm:mt-4'>
             &copy;{new Date().getFullYear()} Daniel Anthony Baudyš. Všechna
             práva vyhrazena.
           </p>
