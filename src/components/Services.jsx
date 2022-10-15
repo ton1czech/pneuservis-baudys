@@ -8,7 +8,7 @@ import { Fade } from 'react-reveal'
 import { AiFillTag } from 'react-icons/ai'
 import dots from '../assets/dots.svg'
 
-const Item = ({ image, subheading, text, inverted, banner, buy }) =>
+const Item = ({ image, subheading, inverted, banner }) =>
   inverted ? (
     <Fade left>
       <div className='grid sm:grid-cols-2 content-center items-center'>
@@ -62,18 +62,22 @@ export default function Services() {
           <Item image={tire3} subheading='Prodej ojetých pneumatik' inverted />
           <Item image={tire5} subheading='Prodej použitých disků' />
         </div>
-        <img
-          className='hidden 2xl:block absolute top-4 left-4'
-          src={dots}
-          alt='dots'
-        />
-        <div className='cover hidden 2xl:block absolute top-4 left-4 w-64 h-[26rem]' />
-        <img
-          className='hidden 2xl:block absolute bottom-4 right-4'
-          src={dots}
-          alt='dots'
-        />
-        <div className='reversecover hidden 2xl:block absolute bottom-4 right-4 w-64 h-[26rem]' />
+        <Fade top>
+          <img
+            className='hidden 2xl:block absolute top-4 left-4'
+            src={dots}
+            alt='dots'
+          />
+          <div className='cover hidden 2xl:block absolute top-4 left-4 w-64 h-[26rem]' />
+        </Fade>
+        <Fade bottom>
+          <img
+            className='hidden 2xl:block absolute bottom-4 right-4'
+            src={dots}
+            alt='dots'
+          />
+          <div className='reversecover hidden 2xl:block absolute bottom-4 right-4 w-64 h-[26rem]' />
+        </Fade>
       </div>
     </Container>
   )
