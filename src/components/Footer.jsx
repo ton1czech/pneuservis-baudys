@@ -74,8 +74,12 @@ export default function Footer() {
               />
             </ul>
             <ul className='mt-12 sm:mt-0'>
-              <Item logo={<MdEmail />} text='ladikmoto@seznam.cz' />
-              <Item logo={<AiFillPhone />} text='+420 777 004 000' />
+              <a href='mailto:ladikmoto@seznam.cz'>
+                <Item logo={<MdEmail />} text='ladikmoto@seznam.cz' />
+              </a>
+              <a href='tel:+420777004000'>
+                <Item logo={<AiFillPhone />} text='+420 777 004 000' />
+              </a>
             </ul>
             <ul className='hidden sm:block space-y-3'>
               <OpeningHoursItem day='Pondělí' />
