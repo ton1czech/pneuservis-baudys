@@ -24,10 +24,10 @@ export default function Navbar() {
     <Container dark>
       <nav className='flex justify-between items-center py-6'>
         <Fade left top>
-          <div className='logo flex gap-2 sm:gap-3'>
+          <a href='#home' className='logo flex gap-2 sm:gap-3'>
             <GiFlatTire className='-mr-2 sm:-mr-3 w-4 h-4 sm:w-6 sm:h-6' />
             servis baudyš
-          </div>
+          </a>
         </Fade>
         <Fade top>
           <ul className='list-none flex gap-3 sm:gap-4 items-center'>
