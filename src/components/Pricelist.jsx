@@ -5,7 +5,7 @@ import { GiMoneyStack } from 'react-icons/gi'
 const Item = ({ price, text }) => (
   <>
     <div className='grid grid-cols-[2fr_1fr] gap-12 sm:gap-20'>
-      <h2 className='subheading font-normal sm:text-3xl text-base'>{text}</h2>
+      <h2 className='subheading font-normal sm:text-2xl text-base'>{text}</h2>
       <p className='subheading sm:text-2xl text-base'>{price}</p>
     </div>
     <div className='h-px bg-light w-full opacity-50' />
