@@ -1,8 +1,10 @@
-import tire1 from '../assets/tire-1.jpg'
-import tire2 from '../assets/tire-2.jpg'
-import tire3 from '../assets/tire-3.jpg'
-import tire4 from '../assets/tire-4.jpg'
-import tire5 from '../assets/tire-5.jpg'
+import services1 from '../assets/services1.jpg'
+import services2 from '../assets/services2.jpg'
+import services3 from '../assets/services3.jpg'
+import services4 from '../assets/services4.jpg'
+import services5 from '../assets/services5.jpg'
+import services6 from '../assets/services6.jpg'
+import services7 from '../assets/services7.png'
 import Container from './Container'
 import { Fade } from 'react-reveal'
 import { AiFillTag } from 'react-icons/ai'
@@ -53,14 +55,32 @@ export default function Services() {
       <div className='py-12 sm:py-24' id='services'>
         <div className='grid space-y-20 sm:space-y-0'>
           <Item
-            image={tire4}
+            image={services1}
             subheading='TPMS instalace a diagnostika'
             banner
           />
-          <Item image={tire1} subheading='Přezutí kol' inverted />
-          <Item image={tire2} subheading='Montáž kol' />
-          <Item image={tire3} subheading='Prodej ojetých pneumatik' inverted />
-          <Item image={tire5} subheading='Prodej použitých disků' />
+          <Item image={services2} subheading='Přezutí kol' inverted />
+          <Item image={services3} subheading='Montáž kol' />
+          <Item
+            image={services4}
+            subheading='Prodej ojetých pneumatik'
+            inverted
+          />
+          <Item
+            image={services5}
+            subheading='Prodej nových pneumatik značky Diplomat (pod značkou Goodyear)'
+            banner
+          />
+          <Item
+            image={services6}
+            subheading='Prodej použitých disků'
+            inverted
+          />
+          <Item
+            image={services7}
+            subheading='Programování funkcí do BMW'
+            banner
+          />
         </div>
         <Fade top>
           <img
