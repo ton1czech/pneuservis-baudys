@@ -13,7 +13,7 @@ const Card = ({ img, name, text }) => (
       alt={name}
       className='rounded-[50%] absolute w-16 h-16 top-2 left-2'
     />
-    <p className='darksubheading px-8'>{text}</p>
+    <p className='darksubheading px-8 sm:text-2xl'>{text}</p>
     <div className='absolute bottom-2 left-2'>
       <div className='text-yellow-500 text-lg flex'>
         {Array.from({ length: 5 }, _ => (
