@@ -17,7 +17,7 @@ const Item = ({ image, subheading, inverted, banner }) =>
     <Fade left>
       <div className='grid sm:grid-cols-2 content-center items-center'>
         <div className='flex flex-col items-center relative sm:pr-4'>
-          <h2 className='darksubheading text-2xl sm:text-4xl text-center mb-2'>
+          <h2 className='text-dark font-semibold text-2xl sm:text-4xl text-center mb-2'>
             {subheading}
           </h2>
           {banner && (
@@ -36,7 +36,7 @@ const Item = ({ image, subheading, inverted, banner }) =>
       <div className='flex flex-col-reverse sm:grid sm:grid-cols-2 content-center items-center'>
         <img src={image} alt={subheading} />
         <div className='flex flex-col items-center relative sm:pl-4'>
-          <h2 className='darksubheading text-2xl sm:text-4xl text-center mb-2'>
+          <h2 className='text-dark font-semibold text-2xl sm:text-4xl text-center mb-2'>
             {subheading}
           </h2>
           {banner && (
@@ -84,22 +84,6 @@ export default function Services() {
             banner
           />
         </div>
-        <Fade top>
-          <img
-            className='hidden 2xl:block absolute top-4 left-4'
-            src={dots}
-            alt='dots'
-          />
-          <div className='cover hidden 2xl:block absolute top-4 left-4 w-64 h-[26rem]' />
-        </Fade>
-        <Fade bottom>
-          <img
-            className='hidden 2xl:block absolute bottom-4 right-4'
-            src={dots}
-            alt='dots'
-          />
-          <div className='reversecover hidden 2xl:block absolute bottom-4 right-4 w-64 h-[26rem]' />
-        </Fade>
       </div>
     </Container>
   )
