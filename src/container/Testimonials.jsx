@@ -9,7 +9,7 @@ import man2 from '/assets/man-2.jpg'
 import man3 from '/assets/man-3.jpg'
 
 const Card = ({ img, name, text }) => (
-  <div className='flex items-center justify-center py-20 bg-light rounded-lg relative h-[190px] sm:min-h-[400px]'>
+  <div className='flex items-center justify-center py-20 bg-light rounded-lg relative h-[190px] sm:min-h-[280px]'>
     <img
       src={img}
       alt={name}
