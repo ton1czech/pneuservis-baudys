@@ -21,11 +21,11 @@ export default function Hero() {
         <Fade right>
           <div>
             <Map />
-            <div className='hidden 2xl:flex mt-6 justify-center'>
-              <p className='text-light text-2xl font-semibold'>
+            <div className='flex mt-6 justify-center'>
+              <p className='text-light text-xl sm:text-2xl font-semibold'>
                 Najdi si k nám cestu!
               </p>
-              <TbArrowLoopLeft2 className='text-light text-4xl rotate-90 ml-2' />
+              <TbArrowLoopLeft2 className='text-light text-2xl sm:text-4xl rotate-90 ml-2' />
             </div>
           </div>
         </Fade>
