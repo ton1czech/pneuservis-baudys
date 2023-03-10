@@ -9,20 +9,20 @@ import man2 from '/assets/man-2.jpg'
 import man3 from '/assets/man-3.jpg'
 
 const Card = ({ img, name, text }) => (
-  <div className='flex items-center justify-center py-20 bg-light rounded-lg relative min-h-[222px] sm:min-h-[400px]'>
+  <div className='flex items-center justify-center py-20 bg-light rounded-lg relative h-[190px] sm:min-h-[400px]'>
     <img
       src={img}
       alt={name}
-      className='rounded-[50%] absolute w-16 h-16 top-2 left-2'
+      className='rounded-[50%] absolute w-10 h-10 sm:w-16 sm:h-16 top-2 left-2'
     />
-    <p className='darksubheading px-8 sm:text-2xl'>{text}</p>
+    <p className='font-semibold text-dark px-8 sm:text-2xl'>{text}</p>
     <div className='absolute bottom-2 left-2'>
       <div className='text-yellow-500 text-lg flex'>
         {Array.from({ length: 5 }, _ => (
           <AiFillStar />
         ))}
       </div>
-      <p className='darktext'>{name}</p>
+      <p className='text-dark sm:text-lg'>{name}</p>
     </div>
   </div>
 )
@@ -30,22 +30,9 @@ const Card = ({ img, name, text }) => (
 export default function Testimonials() {
   return (
     <Container dark>
-      <div className='pt-12 sm:pt-24 pb-6' id='testimonials'>
+      <div className='py-12 sm:py-24' id='testimonials'>
         <Fade bottom>
-          <div className='grid sm:grid-cols-3 flex-wrap gap-10 relative'>
-            <Fade left>
-              <div className='hidden 2xl:block absolute bottom-40 -left-72'>
-                <p className='text text-xl mb-2'>Nezapomeň nás ohodnotit!</p>
-                <a
-                  href='https://goo.gl/maps/zsaWsHR8UZAxUF7j6'
-                  target='_blank'
-                  className='bg-accent cursor-pointer py-2 flex gap-1 items-center justify-center text-2xl uppercase font-semibold hover:scale-[99%] rounded-md'
-                >
-                  <SiGooglemaps className='darktext w-7 h-7' />
-                  <p>Mapy Google</p>
-                </a>
-              </div>
-            </Fade>
+          <div className='grid sm:grid-cols-3 flex-wrap gap-10'>
             <Card
               img={man1}
               name='Jakub Novák'
@@ -58,6 +45,21 @@ export default function Testimonials() {
             />
             <Card img={man3} name='Vojtěch Dvořák' text='Vstřícnost,ceny 👍' />
           </div>
+          <Fade left>
+            <div className='pt-12 sm:pt-20 flex flex-col sm:flex-row sm:gap-20 items-center'>
+              <p className='text-light sm:text-5xl uppercase font-semibold mb-2'>
+                Nezapomeň nás ohodnotit!
+              </p>
+              <a
+                href='https://goo.gl/maps/zsaWsHR8UZAxUF7j6'
+                target='_blank'
+                className='bg-accent cursor-pointer py-2 flex flex-1 w-full gap-1 items-center justify-center text-2xl uppercase font-semibold hover:scale-[99%] rounded-md'
+              >
+                <SiGooglemaps className='darktext w-7 h-7' />
+                <p>Mapy Google</p>
+              </a>
+            </div>
+          </Fade>
         </Fade>
       </div>
     </Container>
