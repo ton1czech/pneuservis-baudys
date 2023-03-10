@@ -17,7 +17,9 @@ export default function Hero() {
             <h1 className='text-light text-xl sm:text-5xl font-semibold mb-6 sm:mb-0'>
               Veškeré služby pro Vaše kola na jednom místě
             </h1>
-            <Rim />
+            <div className='h-full sm:block hidden'>
+              <Rim />
+            </div>
           </div>
         </Fade>
         <Fade right>
