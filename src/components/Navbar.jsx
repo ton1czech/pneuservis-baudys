@@ -1,6 +1,7 @@
+import Container from './Container'
+
 import { GiFlatTire } from 'react-icons/gi'
 import { BiLinkExternal } from 'react-icons/bi'
-import Container from './Container'
 import { Fade } from 'react-reveal'
 
 const Link = ({ url, text, external }) => (

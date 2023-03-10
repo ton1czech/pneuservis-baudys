@@ -1,10 +1,12 @@
-import Container from './Container'
-import man1 from '../assets/man-1.jpg'
-import man2 from '../assets/man-2.jpg'
-import man3 from '../assets/man-3.jpg'
+import Container from '../components/Container'
+
 import { Fade } from 'react-reveal'
 import { AiFillStar } from 'react-icons/ai'
 import { SiGooglemaps } from 'react-icons/si'
+
+import man1 from '/assets/man-1.jpg'
+import man2 from '/assets/man-2.jpg'
+import man3 from '/assets/man-3.jpg'
 
 const Card = ({ img, name, text }) => (
   <div className='flex items-center justify-center py-20 bg-light rounded-lg relative min-h-[222px] sm:min-h-[400px]'>

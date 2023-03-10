@@ -1,5 +1,6 @@
-import Container from './Container'
-import Map from './Map'
+import Container from '../components/Container'
+import Map from '../components/Map'
+
 import { Fade } from 'react-reveal'
 import { TbArrowLoopLeft2 } from 'react-icons/tb'
 

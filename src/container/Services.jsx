@@ -1,14 +1,16 @@
-import services1 from '../assets/services1.jpg'
-import services2 from '../assets/services2.jpg'
-import services3 from '../assets/services3.jpg'
-import services4 from '../assets/services4.jpg'
-import services5 from '../assets/services5.jpg'
-import services6 from '../assets/services6.jpg'
-import services7 from '../assets/services7.png'
-import Container from './Container'
+import Container from '../components/Container'
+
 import { Fade } from 'react-reveal'
 import { AiFillTag } from 'react-icons/ai'
-import dots from '../assets/dots.svg'
+
+import services1 from '/assets/services1.jpg'
+import services2 from '/assets/services2.jpg'
+import services3 from '/assets/services3.jpg'
+import services4 from '/assets/services4.jpg'
+import services5 from '/assets/services5.jpg'
+import services6 from '/assets/services6.jpg'
+import services7 from '/assets/services7.png'
+import dots from '/assets/dots.svg'
 
 const Item = ({ image, subheading, inverted, banner }) =>
   inverted ? (

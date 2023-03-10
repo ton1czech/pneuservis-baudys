@@ -1,10 +1,10 @@
-import Footer from './components/Footer'
-import Hero from './components/Hero'
 import Navbar from './components/Navbar'
-import OpeningHours from './components/OpeningHours'
-import Pricelist from './components/Pricelist'
-import Services from './components/Services'
-import Testimonials from './components/Testimonials'
+import Hero from './container/Hero'
+import Services from './container/Services'
+import OpeningHours from './container/OpeningHours'
+import Pricelist from './container/Pricelist'
+import Testimonials from './container/Testimonials'
+import Footer from './components/Footer'
 
 export default function App() {
   return (

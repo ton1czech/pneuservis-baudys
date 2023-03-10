@@ -1,4 +1,5 @@
-import Container from './Container'
+import Container from '../components/Container'
+
 import { Fade } from 'react-reveal'
 import { GiMoneyStack } from 'react-icons/gi'
 
