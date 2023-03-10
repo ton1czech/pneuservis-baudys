@@ -17,7 +17,7 @@ export default function Hero() {
             <h1 className='text-light text-xl sm:text-5xl font-semibold mb-6 sm:mb-0'>
               Veškeré služby pro Vaše kola na jednom místě
             </h1>
-            <div className='h-full sm:block hidden'>
+            <div className='h-full sm:block hidden relative after:absolute after:bg-light after:inset-0 after:w-full after:h-full after:blur-3xl after:pointer-events-none after:opacity-[7%] after:rounded-full'>
               <Rim />
             </div>
           </div>
