@@ -7,9 +7,10 @@ import { Fade } from 'react-reveal'
 const Link = ({ url, text, external }) => (
   <li>
     <a
-      className={`link flex items-center gap-1 ${
-        external &&
-        'bg-accent rounded py-1 px-2 text-dark hover:text-dark hover:scale-[98%]'
+      className={`font-medium flex items-center gap-1 ease-out duration-100 ${
+        external
+          ? 'bg-accent rounded py-1 px-2 text-dark hover:text-dark hover:scale-[98%]'
+          : 'text-light hover:text-accent'
       }`}
       href={url}
       target={`${external ? '_blank' : ''}`}
@@ -25,9 +26,12 @@ export default function Navbar() {
     <Container dark>
       <nav className='flex justify-between items-center py-6'>
         <Fade left top>
-          <a href='#home' className='logo flex gap-2 sm:gap-3'>
+          <a
+            href='#home'
+            className='font-semibold text-sm sm:text-xl text-light uppercase flex gap-2 sm:gap-3'
+          >
             <GiFlatTire className='-mr-2 sm:-mr-3 w-4 h-4 sm:w-6 sm:h-6' />
-            servis baudyš
+            baudyš
           </a>
         </Fade>
         <Fade top>

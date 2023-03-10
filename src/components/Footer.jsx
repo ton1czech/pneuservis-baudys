@@ -10,7 +10,7 @@ const Link = ({ url, text, logo }) => (
     <a
       href={url}
       target='_blank'
-      className='link font-normal flex gap-1 items-center justify-center sm:justify-start'
+      className='text-light hover:text-accent ease-in duration-100 font-normal flex gap-1 items-center justify-center sm:justify-start'
     >
       <div className='font-bold'>{logo}</div>
       {text}
@@ -20,7 +20,7 @@ const Link = ({ url, text, logo }) => (
 
 const Item = ({ text, logo }) => (
   <li>
-    <p className='text text-sm sm:text-base flex justify-center sm:justify-start items-center gap-1'>
+    <p className='text-light text-sm sm:text-base flex justify-center sm:justify-start items-center gap-1'>
       <div className='font-bold'>{logo}</div>
       {text}
     </p>
@@ -94,17 +94,10 @@ export default function Footer() {
           </div>
         </Fade>
         <Fade bottom>
-          <p className='text text-xs mt-12 sm:mt-20'>Hájek 10, Kdyně 345 06</p>
-          <div className='mt-4 sm:mt-8'>
-            <a
-              className='text text-xs  hover:text-accent'
-              href='https://www.flaticon.com/free-icons/tire'
-              target='_blank'
-            >
-              Tire icons created by Vichanon Chaimsuk - Flaticon
-            </a>
-          </div>
-          <p className='text text-xs mt-2 sm:mt-4'>
+          <p className='text-light text-xs mt-12 sm:mt-20'>
+            Hájek 10, Kdyně 345 06
+          </p>
+          <p className='text-light text-xs mt-12 sm:mt-4'>
             &copy;{new Date().getFullYear()} Daniel Anthony Baudyš. Všechna
             práva vyhrazena.
           </p>

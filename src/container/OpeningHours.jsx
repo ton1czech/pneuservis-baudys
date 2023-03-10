@@ -5,8 +5,8 @@ import { FiClock } from 'react-icons/fi'
 
 const Item = ({ day, weekend }) => (
   <div className='grid grid-cols-2 gap-12 sm:gap-28'>
-    <h2 className='darksubheading'>{day}</h2>
-    <div className='darktext'>
+    <h2 className='font-semibold text-xl sm:text-3xl text-dark'>{day}</h2>
+    <div className='text-dark sm:text-lg'>
       {weekend ? (
         <>
           <p>domluva</p>
