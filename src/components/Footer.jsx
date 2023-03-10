@@ -29,7 +29,7 @@ const Item = ({ text, logo }) => (
 
 const OpeningHoursItem = ({ day, weekend }) => (
   <li
-    className='flex justify-center gap-6 sm:gap-0 text-left sm:grid sm:grid-cols-2 text text-sm sm:text-base
+    className='flex text-light justify-center gap-6 sm:gap-0 text-left sm:grid sm:grid-cols-2 text text-sm sm:text-base
     '
   >
     <p>{day}</p>
