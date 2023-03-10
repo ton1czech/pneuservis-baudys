@@ -7,7 +7,7 @@ import { Fade } from 'react-reveal'
 const Link = ({ url, text, external }) => (
   <li>
     <a
-      className={`text-sm font-medium flex items-center gap-1 ease-out duration-100 ${
+      className={`text-sm sm:text-base font-medium flex items-center gap-1 ease-out duration-100 ${
         external
           ? 'bg-accent rounded py-1 px-2 text-dark hover:text-dark hover:scale-[98%]'
           : 'text-light hover:text-accent'
@@ -28,9 +28,9 @@ export default function Navbar() {
         <Fade left top>
           <a
             href='#home'
-            className='font-semibold text-sm sm:text-xl text-light uppercase flex gap-2 sm:gap-3'
+            className='font-semibold text-sm sm:text-2xl text-light uppercase flex gap-2 sm:gap-4'
           >
-            <GiFlatTire className='-mr-2 sm:-mr-3 w-4 h-4 sm:w-6 sm:h-6' />
+            <GiFlatTire className='-mr-2 sm:-mr-3 w-4 h-4 sm:w-7 sm:h-7' />
             baudyš
           </a>
         </Fade>
