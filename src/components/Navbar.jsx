@@ -7,7 +7,7 @@ import { Fade } from 'react-reveal'
 const Link = ({ url, text, external }) => (
   <li>
     <a
-      className={`font-medium flex items-center gap-1 ease-out duration-100 ${
+      className={`text-sm font-medium flex items-center gap-1 ease-out duration-100 ${
         external
           ? 'bg-accent rounded py-1 px-2 text-dark hover:text-dark hover:scale-[98%]'
           : 'text-light hover:text-accent'

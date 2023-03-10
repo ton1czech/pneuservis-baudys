@@ -1,0 +1,313 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 51135,
+      "max": [
+        0.7779970765113831,
+        0.364827960729599,
+        0.7779970765113831
+      ],
+      "min": [
+        -0.7779970765113831,
+        -0.3648279905319214,
+        -0.7779970765113831
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 613620,
+      "componentType": 5126,
+      "count": 51135,
+      "max": [
+        1.0,
+        0.9999995827674866,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.9999996423721313,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 51135,
+      "max": [
+        1.0,
+        0.35983720421791077
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 254016,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1227240,
+      "componentType": 5126,
+      "count": 16800,
+      "max": [
+        0.7852632999420166,
+        0.3495509922504425,
+        0.7845490574836731
+      ],
+      "min": [
+        -0.7852626442909241,
+        -0.34955132007598877,
+        -0.7859886288642883
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1428840,
+      "componentType": 5126,
+      "count": 16800,
+      "max": [
+        0.9998717904090881,
+        0.9996543526649475,
+        0.9999641180038452
+      ],
+      "min": [
+        -0.9998713135719299,
+        -0.9996543526649475,
+        -0.9999638199806213
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 409080,
+      "componentType": 5126,
+      "count": 16800,
+      "max": [
+        1.0000008344650269,
+        1.0000001192092896
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1016064,
+      "componentType": 5125,
+      "count": 68400,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Unity Fan youtube channel (https://sketchfab.com/unityfan777)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/detailed-tire-public-domain-cc0-2844a0665550471fb2e8fbd1fd9e2e5e",
+      "title": "Detailed Tire - public domain (CC0)"
+    },
+    "generator": "Sketchfab-14.60.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1289664,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 543480,
+      "byteOffset": 1289664,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1630440,
+      "byteOffset": 1833144,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 3463584,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "tire",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0146696,
+          0.0146696,
+          0.0146696,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.42124199697207376
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "tire_protector",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.00637026,
+          0.00637026,
+          0.00637026,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6948497893219999
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "detailed_tire_tire_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "detailed_tire_tire_protector_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        -0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "0d2bbfb17ad74602832c9e2c038bdadb.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        5
+      ],
+      "matrix": [
+        7.549789959870878e-06,
+        0.0,
+        -99.9999999999997,
+        0.0,
+        -99.99999999999838,
+        -1.6292067961387602e-05,
+        -7.549789954319763e-06,
+        0.0,
+        -1.6292067972489832e-05,
+        99.99999999999866,
+        -1.2212453270876722e-12,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "detailed_tire"
+    },
+    {
+      "mesh": 0,
+      "name": "detailed_tire_tire_0"
+    },
+    {
+      "mesh": 1,
+      "name": "detailed_tire_tire_protector_0"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

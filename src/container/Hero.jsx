@@ -3,6 +3,7 @@ import Map from '../components/Map'
 
 import { Fade } from 'react-reveal'
 import { TbArrowLoopLeft2 } from 'react-icons/tb'
+import Rim from '../components/3D/Rim'
 
 export default function Hero() {
   return (
@@ -12,10 +13,11 @@ export default function Hero() {
         id='home'
       >
         <Fade left>
-          <div className='flex flex-col justify-between'>
-            <h1 className='text-light text-2xl sm:text-5xl font-semibold mb-6 sm:mb-0 pr-4'>
+          <div className='flex flex-col justify-between gap-1'>
+            <h1 className='text-light text-xl sm:text-5xl font-semibold mb-6 sm:mb-0'>
               Veškeré služby pro Vaše kola na jednom místě
             </h1>
+            <Rim />
           </div>
         </Fade>
         <Fade right>

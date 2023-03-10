@@ -1,0 +1,11 @@
+Model Information:
+* title:	Detailed Tire - public domain (CC0)
+* source:	https://sketchfab.com/3d-models/detailed-tire-public-domain-cc0-2844a0665550471fb2e8fbd1fd9e2e5e
+* author:	Unity Fan youtube channel (https://sketchfab.com/unityfan777)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Detailed Tire - public domain (CC0)" (https://sketchfab.com/3d-models/detailed-tire-public-domain-cc0-2844a0665550471fb2e8fbd1fd9e2e5e) by Unity Fan youtube channel (https://sketchfab.com/unityfan777) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

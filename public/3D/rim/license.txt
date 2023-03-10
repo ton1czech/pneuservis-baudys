@@ -1,0 +1,11 @@
+Model Information:
+* title:	BBS CH-R + Goodyear Eagle F1 Supercar 3
+* source:	https://sketchfab.com/3d-models/bbs-ch-r-goodyear-eagle-f1-supercar-3-2acc32fc79684a2c8b7df9faaa5a5c35
+* author:	Mozzarellarch (https://sketchfab.com/mozzarellarch)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "BBS CH-R + Goodyear Eagle F1 Supercar 3" (https://sketchfab.com/3d-models/bbs-ch-r-goodyear-eagle-f1-supercar-3-2acc32fc79684a2c8b7df9faaa5a5c35) by Mozzarellarch (https://sketchfab.com/mozzarellarch) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

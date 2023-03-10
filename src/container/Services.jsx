@@ -10,7 +10,6 @@ import services4 from '/assets/services4.jpg'
 import services5 from '/assets/services5.jpg'
 import services6 from '/assets/services6.jpg'
 import services7 from '/assets/services7.png'
-import dots from '/assets/dots.svg'
 
 const Item = ({ image, subheading, inverted, banner }) =>
   inverted ? (
