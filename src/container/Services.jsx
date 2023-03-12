@@ -18,9 +18,9 @@ const Item = ({ image, subheading, banner }) => (
         src={image}
         alt={subheading}
       />
-      <div className='absolute bg-black opacity-75 inset-0' />
+      <div className='absolute bg-black opacity-80 inset-0' />
       <div className='absolute inset-0 grid content-center'>
-        <h2 className='text-light font-semibold text-2xl sm:text-4xl text-center'>
+        <h2 className='text-light font-semibold text-xl md:text-2xl xl:text-4xl text-center'>
           {subheading}
         </h2>
       </div>
