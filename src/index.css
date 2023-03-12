@@ -7,34 +7,3 @@
 * {
   scroll-behavior: smooth;
 }
-
-@layer components {
-  .circle-gradient {
-    background-image: radial-gradient(
-      circle,
-      #150b34,
-      #1c1144,
-      #241554,
-      #2c1a65,
-      #351e76
-    );
-    filter: blur(75px);
-    opacity: 15%;
-  }
-  .cover {
-    background: linear-gradient(
-      180deg,
-      rgba(252, 247, 255, 0) 0%,
-      rgba(252, 247, 255, 0.5) 10%,
-      rgba(252, 247, 255, 1) 80%
-    );
-  }
-  .reversecover {
-    background: linear-gradient(
-      0deg,
-      rgba(252, 247, 255, 0) 0%,
-      rgba(252, 247, 255, 0.5) 10%,
-      rgba(252, 247, 255, 1) 80%
-    );
-  }
-}
