@@ -12,20 +12,25 @@ import services6 from '/assets/services6.jpg'
 
 const Item = ({ image, subheading, banner }) => (
   <Fade left>
-    <div className=''>
+    <div className='group'>
       <img
         className='relative aspect-square overflow-hidden object-cover'
         src={image}
         alt={subheading}
       />
-      <div className='absolute bg-black opacity-80 inset-0' />
-      <div className='absolute inset-0 grid content-center'>
+      <div className='absolute bg-black opacity-80 inset-0 group-hover:opacity-0 transition duration-700' />
+      <div className='absolute inset-0 grid content-center group-hover:opacity-0 transition duration-300'>
         <h2 className='text-light font-semibold text-xl md:text-2xl xl:text-4xl text-center'>
           {subheading}
         </h2>
       </div>
       {banner && (
-        <p className='absolute bottom-1/2 left-1/2 -translate-x-1/2 translate-y-[125px] lg:translate-y-[150px] flex items-center px-4 py-1 font-semibold text-xl sm:text-2xl rounded text-dark tracking-widest bg-accent w-min'>
+        <p
+          className='absolute bottom-1/2 left-1/2 -translate-x-1/2 translate-y-[125px] 
+        lg:translate-y-[150px] flex items-center px-4 py-1 font-semibold text-xl sm:text-2xl 
+        rounded text-dark tracking-widest bg-accent w-min group-hover:opacity-0
+        transition duration-300'
+        >
           Novinka!
           {<AiFillTag />}
         </p>
