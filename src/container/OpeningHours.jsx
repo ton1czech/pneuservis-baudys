@@ -30,7 +30,7 @@ export default function OpeningHours() {
     <Container dark>
       <div className='py-12 sm:py-24' id='openinghours'>
         <Fade>
-          <div className='p-10 sm:p-16 bg-light rounded-lg relative grid justify-center space-y-4 sm:space-y-6'>
+          <div className='py-6 px-4 sm:p-16 bg-light rounded-lg relative grid justify-center space-y-4 sm:space-y-6'>
             <Item day='Pondělí' />
             <Item day='Úterý' />
             <Item day='Středa' />
