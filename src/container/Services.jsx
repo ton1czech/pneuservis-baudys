@@ -25,7 +25,7 @@ const Item = ({ image, subheading, banner }) => (
         </h2>
       </div>
       {banner && (
-        <p className='absolute bottom-1/2 left-1/2 -translate-x-1/2 translate-y-[150px] flex items-center px-4 py-1 font-semibold text-2xl rounded text-dark tracking-widest bg-accent w-min'>
+        <p className='absolute bottom-1/2 left-1/2 -translate-x-1/2 translate-y-[125px] lg:translate-y-[150px] flex items-center px-4 py-1 font-semibold text-xl sm:text-2xl rounded text-dark tracking-widest bg-accent w-min'>
           Novinka!
           {<AiFillTag />}
         </p>
