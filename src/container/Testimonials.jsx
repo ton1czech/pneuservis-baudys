@@ -45,7 +45,7 @@ export default function Testimonials() {
             />
             <Card img={man3} name='Vojtěch Dvořák' text='Vstřícnost,ceny 👍' />
           </div>
-          <Fade left>
+          <Fade bottom>
             <div className='pt-12 sm:pt-20 flex flex-col sm:flex-row sm:gap-20 items-center'>
               <p className='text-light sm:text-5xl uppercase font-semibold mb-2'>
                 Nezapomeň nás ohodnotit!
