@@ -3,12 +3,12 @@ import Container from '../components/Container'
 import { Fade } from 'react-reveal'
 import { AiFillTag } from 'react-icons/ai'
 
-import services1 from '/assets/services1.jpg'
-import services2 from '/assets/services2.jpg'
-import services3 from '/assets/services3.jpg'
-import services4 from '/assets/services4.jpg'
-import services5 from '/assets/services5.jpg'
-import services6 from '/assets/services6.jpg'
+import services1 from '/assets/services1.webp'
+import services2 from '/assets/services2.webp'
+import services3 from '/assets/services3.webp'
+import services4 from '/assets/services4.webp'
+import services5 from '/assets/services5.webp'
+import services6 from '/assets/services6.webp'
 
 const Item = ({ image, subheading, banner }) => (
   <Fade left>

@@ -4,9 +4,9 @@ import { Fade } from 'react-reveal'
 import { AiFillStar } from 'react-icons/ai'
 import { SiGooglemaps } from 'react-icons/si'
 
-import man1 from '/assets/man-1.jpg'
-import man2 from '/assets/man-2.jpg'
-import man3 from '/assets/man-3.jpg'
+import man1 from '/assets/man-1.webp'
+import man2 from '/assets/man-2.webp'
+import man3 from '/assets/man-3.webp'
 
 const Card = ({ img, name, text }) => (
   <div className='flex items-center justify-center py-20 bg-light rounded-lg relative h-[190px] sm:min-h-[280px]'>
